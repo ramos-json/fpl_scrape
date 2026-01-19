@@ -17,7 +17,7 @@ public class PlayerService {
     }
     public List<Player> getPlayersFromTeam(String teamName){
         return playerRepository.findAll().stream()
-                .filter(p->p.getTeam_name().equals(teamName))
+                .filter(p->p.getTeam_name().toLowerCase().equals(teamName.toLowerCase()))
                 .toList();
     }
     public List<Player> getPlayersByName(String search){
@@ -27,7 +27,7 @@ public class PlayerService {
     }
     public List<Player> getPlayersByPos(String search){
         return playerRepository.findAll().stream()
-                .filter(p ->p.getPosition().contains(search))
+                .filter(p ->p.getPosition().toLowerCase().contains(search.toLowerCase()))
                 .toList();
     }
     public List<Player> getPlayersByNation(String nation){
