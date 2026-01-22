@@ -27,7 +27,7 @@ public class PlayerService {
     }
     public List<Player> getPlayersByPos(String search){
         return playerRepository.findAll().stream()
-                .filter(p ->p.getPosition().toLowerCase().contains(search.toLowerCase()))
+                .filter(p ->p.getPosition() != null && p.getPosition().toLowerCase().contains(search.toLowerCase()))
                 .toList();
     }
     public List<Player> getPlayersByNation(String nation){

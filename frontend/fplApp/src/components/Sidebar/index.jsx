@@ -16,9 +16,6 @@ const Sidebar = () =>{
                 <NavLink exact="true" activeclassname = "active"  to="/teams">
                     Teams
                 </NavLink>
-                <NavLink exact="true" activeclassname = "active" to="/nation">
-                   Nation
-                </NavLink>
                 <NavLink exact="true" activeclassname = "active"  to="/position">
                     Position
                 </NavLink>

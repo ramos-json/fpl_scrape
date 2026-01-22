@@ -27,7 +27,6 @@ const Data = () =>{
     useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const teamValue = params.get('team');
-    const nationValue = params.get('nation');
     const positionValue = params.get('position');
     const nameValue = params.get('name');
     
@@ -41,16 +40,6 @@ const Data = () =>{
           setError(error);
           setLoading(false);
         });
-    } else if (nationValue){
-      axios.get(`http://localhost:8080/api/v1/player?nation=${encodeURIComponent(nationValue)}`)
-      .then(response => {
-        setPlayerData(response.data);
-        setLoading(false);
-      })
-      .catch(error => {
-        setError(error);
-        setLoading(false);
-      });
     } else if (positionValue){
       axios.get(`http://localhost:8080/api/v1/player?position=${encodeURIComponent(positionValue)}`)
       .then(response => {
