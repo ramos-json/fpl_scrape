@@ -1,0 +1,84 @@
+{
+    "teams": [
+        {
+            "cover": "/Teams/Arsenal.png", 
+            "title": "Arsenal"
+        }, 
+        {
+            "cover": "/Teams/AstonVilla.png", 
+            "title": "Aston-Villa"
+        },
+        {
+            "cover": "/Teams/Bournemouth.png", 
+            "title": "Bournemouth"
+        },
+        {
+            "cover": "/Teams/Brentford.png", 
+            "title": "Brentford"
+        },
+        {
+            "cover": "/Teams/Brighton.png", 
+            "title": "Brighton"
+        },
+        {
+            "cover": "/Teams/Burnley.png", 
+            "title": "Burnley"
+        },
+        {
+            "cover": "/Teams/Chelsea.png", 
+            "title": "Chelsea"
+        },
+        {
+            "cover": "/Teams/CrystalPalace.png", 
+            "title": "Crystal-Palace"
+        }, 
+        {
+            "cover": "/Teams/Everton.png", 
+            "title": "Everton"
+        },
+        {
+            "cover": "/Teams/Fulham.png", 
+            "title": "Fulham"
+        },
+        {
+            "cover": "/Teams/LeedsUnited.png", 
+            "title": "Leeds-United"
+        },
+        {
+            "cover": "/Teams/Liverpool.png", 
+            "title": "Liverpool"
+        },
+        {
+            "cover": "/Teams/ManchesterCity.png", 
+            "title": "Manchester-City"
+        },
+        {
+            "cover": "/Teams/ManchesterUnited.png", 
+            "title": "Manchester-United"
+        },
+        {
+            "cover": "/Teams/Newcastle.png", 
+            "title": "Newcastle-United"
+        },
+        {
+            "cover": "/Teams/NottinghamForest.png", 
+            "title": "Nottingham-Forest"
+        },
+        {
+            "cover": "/Teams/Sunderland.png", 
+            "title": "Sunderland"
+        },
+        {
+            "cover": "/Teams/Tottenham.png", 
+            "title": "Tottenham"
+        },
+        {
+            "cover": "/Teams/WestHam.png", 
+            "title": "West-Ham-United"
+        },
+        {
+            "cover": "/Teams/Wolves.png", 
+            "title": "Wolverhampton-Wanderers"          
+        }
+    ]
+}

@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Teams from './components/Teams'
 import Data from './components/Data'
+import Search from './components/Search'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='teams' element={<Teams/>} />
           <Route path='data' element={<Data/>} />
+          <Route path='search' element={<Search/>} />
         </Route>
       </Routes>
     </>

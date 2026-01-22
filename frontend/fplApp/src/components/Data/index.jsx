@@ -85,7 +85,10 @@ const Data = () =>{
                 }).filter(player=> !player.name.includes("Squad") && !player.name.includes("Opponent"))
             } 
                       columns={columns} 
-                      pageSize={5} />
+                      pageSize={5} 
+                      sx={{
+          fontSize: '16px', // Applies font size to all text inside the grid
+        }} />
                 
         </>
     )
