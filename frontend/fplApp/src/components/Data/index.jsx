@@ -31,7 +31,7 @@ const Data = () =>{
     const nameValue = params.get('name');
     
     if (teamValue) {
-      axios.get(`http://localhost:8080/api/v1/player?team=${encodeURIComponent(teamValue)}`)
+      axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/player?team=${encodeURIComponent(teamValue)}`)
         .then(response => {
           setPlayerData(response.data);
           setLoading(false);
@@ -41,7 +41,7 @@ const Data = () =>{
           setLoading(false);
         });
     } else if (positionValue){
-      axios.get(`http://localhost:8080/api/v1/player?position=${encodeURIComponent(positionValue)}`)
+      axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/player?position=${encodeURIComponent(positionValue)}`)
       .then(response => {
         setPlayerData(response.data);
         setLoading(false);
@@ -51,7 +51,7 @@ const Data = () =>{
         setLoading(false);
       });
     } else if (nameValue){
-      axios.get(`http://localhost:8080/api/v1/player?name=${encodeURIComponent(nameValue)}`)
+      axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/player?name=${encodeURIComponent(nameValue)}`)
       .then(response => {
         setPlayerData(response.data);
         setLoading(false);
@@ -66,7 +66,8 @@ const Data = () =>{
     }
   }, []);
   if(loading) return <div>LOADING...</div>
-  if(error) return <div>ERROR: {error}</div>
+
+  if(error) return <div>ERROR: {error.code}   BACKEND CAN TAKE TIME TO SPIN UP INITIALLY, , REFRESH AFTER SOME TIME</div>
     return(
         <>
             <DataGrid rows={playerData.map((item, index) => {

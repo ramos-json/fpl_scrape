@@ -26,7 +26,7 @@ const Search = () =>{
         { field: "team_name", headerName: "Team", width: 100 },
     ]
     useEffect(()=>{
-        axios.get('http://localhost:8080/api/v1/player')
+        axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/player`)
         .then(response =>{
             setLoading(false)
             setPlayerData(response.data)
@@ -46,7 +46,7 @@ const Search = () =>{
         }
     },[searchQ])
     if(loading) return <div>LOADING...</div>
-    if(error) return <div>ERROR</div>
+    if(error) return <div>ERROR: {error.code}   BACKEND CAN TAKE TIME TO SPIN UP INITIALLY, REFRESH AFTER SOME TIME</div>
 
     const handleSearchChange =(event) =>{
         setSearchQ(event.target.value);
