@@ -95,8 +95,6 @@ The application allows users to query Premier League players by name, position, 
 - Advanced filtering and sorting
 - Player comparison and analytics
 - API pagination and caching
-- Containerization with Docker
-- Cloud deployment
 
 ---
 
