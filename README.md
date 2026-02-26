@@ -1,103 +1,47 @@
 # Premier League Player Statistics Platform
 
-A full-stack data-driven web application that scrapes, stores, and serves Premier League player statistics through a RESTful API and modern React frontend.
+A full-stack web app that collects and serves Premier League player statistics through a REST API and React frontend.
 
----
+## Overview
 
-## 📌 Project Summary
+This project covers the full pipeline:
 
-This project demonstrates an end-to-end data pipeline and full-stack system design:
-- Web scraping and data ingestion
-- Relational database modeling
-- REST API development
-- Frontend integration with a backend service
+- Scraping player data from fbref.com  
+- Storing structured data in PostgreSQL  
+- Exposing data through a Spring Boot REST API  
+- Displaying results in a React (Vite) frontend  
 
-The application allows users to query Premier League players by name, position, or team.
+Users can search players by name, position, or team.
 
----
-
-## 🕷️ Data Collection & Processing
-
-- Scraped player and team data from **fbref.com**
-- Collected statistics for all Premier League teams and players
-- Transformed and stored raw data in **CSV** format
-- Imported structured data into a **PostgreSQL** database
-
----
-
-## 🗄️ Database Design
-
-- **PostgreSQL** relational database
-- Normalized schema for teams and players
-- Optimized queries for filtering by:
-  - Player name
-  - Position
-  - Premier League team
-
----
-
-## 🔧 Backend Architecture
-
-- Built with **Java & Spring Boot**
-- RESTful API for accessing player data
-- Supports flexible query parameters:
-  - `/players?name=...`
-  - `/players?position=...`
-  - `/players?team=...`
-- Implements clean separation of concerns (controller, service, repository layers)
-- Connects to PostgreSQL using JPA/JDBC
-
----
-
-## 🎨 Frontend Application
-
-- Developed using **React** with **Vite**
-- Consumes Spring Boot REST API
-- Dynamically renders player statistics based on user queries
-- Component-based architecture for maintainability
-
----
-
-## 🛠️ Technologies Used
+## Tech Stack
 
 **Backend**
 - Java
 - Spring Boot
 - PostgreSQL
-- JPA / JDBC
+- JPA 
 
 **Frontend**
 - React
 - Vite
-- JavaScript
 
-**Data & Tooling**
+**Data**
 - Web scraping
-- CSV data processing
-- REST APIs
-- Git & GitHub
+- CSV processing
 
----
+## API Examples
 
-## 📈 Key Skills Demonstrated
+- `/players?name=...`
+- `/players?position=...`
+- `/players?team=...`
 
-- Full-stack application development
-- Web scraping and data ingestion
-- REST API design and implementation
+## What This Project Focuses On
+
+- REST API design
 - Relational database modeling
 - Backend–frontend integration
-- Query optimization and filtering logic
+- Query filtering and data handling
 
----
+## Notes
 
-## 🔮 Future Enhancements
-
-- Advanced filtering and sorting
-- Player comparison and analytics
-- API pagination and caching
-
----
-
-## 📄 Disclaimer
-
-Player statistics sourced from **fbref.com** and used for educational purposes only.
+Player data sourced from fbref.com for educational purposes.
